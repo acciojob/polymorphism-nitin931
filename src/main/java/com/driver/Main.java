@@ -1,13 +1,28 @@
 package com.driver;
 
 public class Main {
+    public static class Product{
+        public int product(int x, int y) {
+            return x*y;
+        }
 
-    Product p =new Product();
+        public int product(int x, int y, int z) {
+            return x*y*z;
+        }
 
-    int a = p.product(10,2);
-    int b = p.product(10,2,3);
-    double x = 10, y =2;
-    double c = p.product(x,y);
+        public double product(double x, double y) {
+            return x*y;
+        }
+    }
+    public static void main(String[] args){
+
+        Product p = new Product();
+
+        p.product(4,6);
+        p.product(4,5,7);
+        p.product(4.5,5.7);
+
+    }
 
 
 }
